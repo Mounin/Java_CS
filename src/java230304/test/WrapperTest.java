@@ -45,10 +45,17 @@ public class WrapperTest {
 //        System.out.println(i1.toString());  // 报错
     }
 
+    public void method(Object obj) {
+        System.out.println(obj);
+    }
 
     // 自动装箱和自动拆箱
     @Test
     public void test3() {
+        int num1 = 1;
+        // 基本数据类型-->包装类型
+        method(num1);
+
         // 自动装箱:基本数据类型 ==》 包装类
         int num2 = 11;
         Integer in2 = num2;  // 自动装箱
