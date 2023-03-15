@@ -9,10 +9,11 @@ package java230224.test;
 public class Test1 {
 
     public static void main(String[] args) {
-//        Person1 p = new Person1("zhangsan", 18);
+        Person1 p = new Person1("hangman", 18);
 //        System.out.println(p.name + p.age);
 //        System.out.println(Person1.weight);
         Person1.add();
+        System.out.println(p instanceof Object);
     }
 }
 
